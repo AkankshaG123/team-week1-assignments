@@ -1,0 +1,312 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #1b1f24;
+  padding: 25px;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+}
+
+header .logo {
+  color: #12bdff;
+  margin-right: 130px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+}
+
+header ul li {
+  margin-right: 30px;
+}
+
+header ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+header ul li a:hover {
+  color: #12bdff;
+}
+
+section.hero-section {
+  background-color: #1b1f24;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 100px 120px 50px 200px;
+}
+
+.hero-section__title {
+  font-size: 48px;
+}
+
+.hero-section__title span {
+  color: #12bdff;
+}
+
+.hero-section__desc {
+  color: #c4c4c4;
+}
+
+.hero-img img {
+  margin-left: 30px;
+  border-radius: 50%;
+}
+
+.social-icons {
+  margin: 18px 0;
+}
+
+ul.social-icons {
+  list-style: none;
+  display: flex;
+}
+
+.social-icons li {
+  margin-right: 15px;
+  border-radius: 50%;
+  border: 1px solid #12bdff;
+  padding: 8px 12px;
+}
+
+.social-icons li:hover {
+  background-color: #12bdff;
+  
+}
+
+.social-icons li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+ 
+}
+
+.btn.btn-primary {
+  background-color: #12bdff;
+  color: #1b1f24;
+  font-weight: 600;
+}
+
+.btn.btn-primary:hover {
+  background-color: #0c8ec2;
+}
+
+.btn-dark-outlined {
+  background-color: #1b1f24;
+  border: 1px solid #12bdff;
+  color: #12bdff;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.btn-dark-outlined:hover {
+  cursor: pointer;
+  background-color: #12bdff;
+  color: #fff !important;
+  
+}
+
+
+section.projects-section {
+  background-color: #1b1f24;
+  color: #fff;
+  padding: 50px 120px;
+}
+
+.projects-section h2 {
+  font-size: 28px;
+  text-align: center;
+}
+
+.projects-section h2 > span {
+  color: #12bdff;
+}
+
+.projects-cards {
+  display: flex;
+}
+
+.projects-card-box {
+  width: 33.33%;
+  margin: 35px 10px;
+  padding: 33px;
+  background-color: #22282f;
+  border-radius: 5px;
+
+}
+
+.projects-card-box:hover {
+  box-shadow: 3px 5px 20px #03506e;
+  transform: translateY(-2px);
+}
+
+.projects-card-box__icons > i {
+  font-size: 30px;
+  border-radius: 50%;
+  border: 1px solid #12bdff;
+  padding: 20px;
+}
+
+.projects-card-box:hover .projects-card-box__icons > i {
+  color: #12bdff;
+  background-color: #1b1f24;
+}
+
+.projects-card-box__desc h4 {
+  font-size: 18px;
+  margin: 18px 0 10px 0;
+}
+
+.projects-card-box__desc p {
+  font-size: 14px;
+  color: #c4c4c4;
+}
+
+.projects-card-box__buttons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-card-box__buttons button {
+  background-color: #22282f;
+}
+
+.projects-card-box__buttons button > a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #fff;
+}
+
+
+section.contact-section {
+  background-color: #22282f;
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+}
+
+.contact-section h2 {
+  font-size: 28px;
+  margin: 18px 0;
+}
+
+.contact-section h2 > span {
+  color: #12bdff;
+}
+
+.contact-section form div > input,
+textarea {
+  background-color: #c4c4c4;
+  width: 300px;
+  padding: 5px 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+
+.contact-section form div > button {
+  font-size: 14px;
+}
+
+.contact__github {
+  margin-top: 15px;
+}
+
+.contact__github button {
+  padding: 10px 44px;
+  background-color: #171515;
+  font-size: 14px;
+}
+
+.contact__github button > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.contact__github button > a > i {
+  font-size: 16px;
+}
+
+
+footer {
+  background-color: #1b1f24;
+  color: gray;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 13px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  header .logo {
+    margin: auto;
+  }
+
+  header ul {
+    margin-top: 10px;
+  }
+
+  section.hero-section {
+    flex-direction: column;
+    padding: 40px;
+    padding-top: 130px;
+  }
+
+  .hero-img img {
+    display: none;
+  }
+
+  section.projects-section {
+    padding: 40px;
+  }
+
+  .projects-cards {
+    margin-top: 15px;
+    flex-direction: column;
+  }
+
+  .projects-card-box {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .contact-section form div input,
+  textarea {
+    width: 100%;
+  }
+}
